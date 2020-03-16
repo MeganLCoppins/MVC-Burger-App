@@ -1,19 +1,84 @@
+body {
+  background-color: rgb(70, 165, 133);
+  font-family: 'Lobster', cursive;
+}
+h1 {
+  /* margin-left: 300px; */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: rgb(223, 223, 98);
+  font-size: 70px;
+  font-family: 'Lobster', cursive;
+}
+h2 {
+  text-align: center;
+  color: rgb(70, 165, 133);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+}
+#devoured {
+    background: rgb(236, 236, 131);
+    font-size: 20px;
+    padding: 20px;
+}
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
+  padding: 5px;
+  margin: 5px;
+  background: rgb(236, 236, 131);
+  color: rgb(70, 165, 133);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin-left: 50px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+#center-form {
+    margin-left: 400px;
+    border: 2px, white, solid;
+    color: rgb(70, 165, 133);
+    font-size: 20px;
     font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
+}
+.change-devour{
+    background-color: rgb(70, 165, 133);
+    color: rgb(223, 223, 98);
+}
+.delete-burger{
+    background-color: rgb(70, 165, 133);
+    color: rgb(223, 223, 98);
+}
+#addButton {
+    background-color: rgb(70, 165, 133);
+    color: rgb(223, 223, 98);
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+#img1{
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+}
+#img2{
+    margin-left: 200px;
+}
+#img3{
+    margin-left: 100px;
+}

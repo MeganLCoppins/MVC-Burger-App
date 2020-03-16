@@ -1,39 +1,64 @@
-<h1>Burgers!</h1>
-
-<h2>Burgers that are not devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block notdevoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that are devoured!</h2>
-
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block notdevoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu">Burger Name:</label>
-    <input type="text" id="bu" name="name">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="https://res.cloudinary.com/teepublic/image/private/s--YEvi9Zmt--/c_crop,x_10,y_10/c_fit,h_830/c_crop,g_north_west,h_1038,w_1038,x_-152,y_-104/l_upload:v1565806151:production:blanks:vdbwo35fw6qtflw9kezw/fl_layer_apply,g_north_west,x_-263,y_-215/b_rgb:ffb81c/c_limit,f_jpg,h_630,q_90,w_630/v1564763112/production/designs/5491426_0.jpg" alt="burger img" id="img1">
+    </div>
+    <div class="col">
+    <h1>Burgers!</h1>
+    </div>
+    <div class="col">
+    <img src="https://res.cloudinary.com/teepublic/image/private/s--YEvi9Zmt--/c_crop,x_10,y_10/c_fit,h_830/c_crop,g_north_west,h_1038,w_1038,x_-152,y_-104/l_upload:v1565806151:production:blanks:vdbwo35fw6qtflw9kezw/fl_layer_apply,g_north_west,x_-263,y_-215/b_rgb:ffb81c/c_limit,f_jpg,h_630,q_90,w_630/v1564763112/production/designs/5491426_0.jpg">
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Not Devoured
+  <div class="row" id="devoured">
+  <div class="col-6">
+    <h2>Burgers that are not devoured!</h2>
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block notdevoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
   </div>
+  <div class="col-6">
+    <h2>Burgers that are devoured!</h2>
 
-  <button type="submit">Add Burger</button>
-</form>
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block notdevoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col">
+      <img src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346" id="img2">
+    </div>
+    <div class="col">
+      <img src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
+    </div>
+    <div class="col">
+      <img id="img3" src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
+    </div>
+  </div>
+  <div class="row" id="center-form">
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="bu">Burger Name:</label>
+        <input type="text" id="bu" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="devoured">Devoured?</label><br>
+        <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+        <input type="radio" name="devoured" value="0"> Not Devoured
+      </div>
+
+      <button type="submit" id="addButton">Add Burger</button>
+    </form>
+  </div>
+</div>
 
