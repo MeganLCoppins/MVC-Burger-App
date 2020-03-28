@@ -1,6 +1,8 @@
 # Eat-Da-Burger
 
-I created this application with Node, Express, and Handlebars. Eat-Da-Burger is a burger logging application that allows you to:
+## Description
+
+Eat-Da-Burger is a full-stack burger logging application that allows you to:
 
 * View a list of burgers that have either been devoured or not
 
@@ -10,16 +12,37 @@ I created this application with Node, Express, and Handlebars. Eat-Da-Burger is 
 
 * Delete selected burgers
 
-<img src="https://media.giphy.com/media/iEq4yUafs400vJY2Q7/giphy.gif" alt="app demo">
+## Table of Contents
+* [Usage](#Usage)
+* [Demonstration](#Demonstration)
+* [Technologies](#Technologies)
+* [Deployed](#Deployed)
+* [Developer](#Developer)
 
-## Created By
+## Usage
 
-Megan Coppins
+To use the application go to the [deployed link](#Deployed).
 
-Link to Deployed Application:
+## Demonstration
+
+<img src="https://media.giphy.com/media/Qx5lrJFp7EsLW5SaAZ/giphy.gif" alt="app demo">
+
+## Technologies
+
+* HTML
+* CSS
+* JavaScript
+* Node.js
+* Express
+* Handlebars
+* MySQL
+
+## Deployed
 
 https://eat-da-burger5.herokuapp.com/
 
-Link to GitHub Repo:
+## Developer
+
+Megan Coppins
 
 https://meganlcoppins.github.io/Eat-Da-Burger/
