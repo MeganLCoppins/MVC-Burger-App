@@ -6,6 +6,7 @@ body {
 h1 {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 32px;
   color: rgb(242, 242, 113);
   font-size: 100px;
   font-family: 'Lobster', cursive;
@@ -19,31 +20,24 @@ h2 {
   font-family: 'Lobster', cursive;
   font-size: 50px;
 }
-
+li {
+  margin-right: 8%;
+}
 #devoured {
     background: rgba(255, 255, 255);
     font-size: 20px;
-    padding: 20px;
-    margin-bottom: 80px;
-    margin-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    margin-bottom: 8%;
 }
-
-li {
-  padding: 5px;
-  margin: 5px;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .label {
   font-weight: bold;
 }
-
 .create-update-form {
   padding: 5px;
   margin-left: 50px;
-  background: aqua;
 }
 
 .form-group {
@@ -51,11 +45,7 @@ li {
 }
 
 #center-form {
-    margin-top: 10px;
     margin-bottom: 30px;
-    padding-left: 31%;
-    background-color: white;
-    color: black;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -74,30 +64,36 @@ li {
     color: red;
 }
 
+.radioBtn{
+  margin-left: 2%;
+}
+
 #addButton {
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: rgb(247, 179, 52);
 }
+#notDev{
+  /* margin-left: 26%; */
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+#dev{
+  margin-left: 40%;
+  margin-right: 40%;
+} 
 
 img{
-    width: 50%;
-    height: 50%;
-    margin-left: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width: 30%;
+    height: 30%;
+    margin-left: 145%;
   /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.8s;
 
   /* When the animation is finished, start again */
     animation-iteration-count: infinite;
-}
-
-.imgHeader{
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
 }
 
 @keyframes shake {

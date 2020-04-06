@@ -1,71 +1,68 @@
 <div class="container">
-{{!-- heading row  --}}
+  {{!-- heading row  --}}
   <div class="row">
-    <div class="col-md-4">
-      <img src="https://www.pngitem.com/pimgs/m/160-1607513_cartoon-burger-png-build-a-burger-clipart-transparent.png"
-        alt="burger img" class="imgHeader">
-    </div>
-    <div class="col-md-4">
+    <div class="col-md">
       <h1>Burgers!</h1>
     </div>
-    <div class="col-md-4">
-      <img src="https://www.pngitem.com/pimgs/m/160-1607513_cartoon-burger-png-build-a-burger-clipart-transparent.png" alt="burger img" class="imgHeader">
-    </div>
   </div>
-{{!-- row with list of burgers --}}
-  <div class="row" id="devoured">
-    <div class="col-md-6">
-      <h2>Burgers Not Devoured!</h2>
-      <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block notdevoured=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h2>Devoured Burgers!</h2>
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burgers/burger-block notdevoured=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
-    </div>
-  {{!-- images of burgers --}}
-      <div class="col-md-4" id="burgerImages">
-        <img class="img-fluid"
-          src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
-      </div>
+  {{!-- row with list of burgers --}}
+  <div id="devoured">
+    <div class="row">
       <div class="col-md-4">
         <img class="img-fluid"
           src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
       </div>
-      <div class="col-md-4">
-        <img class="img-fluid"
-          src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
+    </div>
+    <div class="row">
+      <div class="col-md">
+        {{!-- form to add burger --}}
+        <div id="center-form">
+          <form class="create-form">
+            <div class="form-group">
+              <label for="bu">
+                <h3>Burger Name: </h3>
+              </label>
+              <input type="text" id="bu" name="name">
+            </div>
+            <div class="form-group" id="newBurgers">
+              <label for="devoured">
+                <h3>This Burger is: </h3>
+              </label>
+              <div>
+                <h5> Devoured! <input class="radioBtn" type="radio" name="devoured" value="1" checked></h5>
+              </div>
+              <div>
+                <h5> Not Devoured <input class="radioBtn" type="radio" name="devoured" value="0"></h5>
+              </div>
+            </div>
+            <button type="submit" id="addButton">Add Burger</button>
+          </form>
+        </div>
       </div>
-  {{!-- form to add burger --}}
-      <div id="center-form">
-        <form class="create-form">
-          <div class="form-group">
-            <label for="bu">
-              <h3>Burger Name: </h3>
-            </label>
-            <input type="text" id="bu" name="name">
-          </div>
-          <div class="form-group" id="newBurgers">
-            <label for="devoured">
-              <h3>This Burger is: </h3>
-            </label>
-            <br>
-              <input type="radio" name="devoured" value="1" checked><h5> Devoured!</h5>
-              <input type="radio" name="devoured" value="0"><h5> Not Devoured</h5>
-          </div>
-          <button type="submit" id="addButton">Add Burger</button>
-        </form>
+      <div class="row">
+        <div class="col-md-4" id="dev">
+          <h2>Devoured Burgers!</h2>
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block notdevoured=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+        <div class="col-md-4" id="notDev">
+          <h2>Burgers Not Devoured!</h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block notdevoured=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+        {{!-- images of burgers --}}
       </div>
     </div>
   </div>
+
+ 
