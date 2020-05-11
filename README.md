@@ -21,11 +21,12 @@ Eat-Da-Burger is a full-stack burger logging application that allows you to:
 
 ## Usage
 
-To use the application go to the [deployed link](#Deployed).
+To use the application go to the [deployed link](https://eat-da-burger5.herokuapp.com/).
 
 ## Demonstration
 
-<img src="https://media.giphy.com/media/Qx5lrJFp7EsLW5SaAZ/giphy.gif" alt="app demo">
+<img src="./public/assets/images/screenshot1.png" alt="app demo 1">
+<img src="./public/assets/images/screenshot2.png" alt="app demo 2">
 
 ## Technologies
 
