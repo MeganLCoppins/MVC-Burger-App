@@ -91,7 +91,6 @@ img {
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
-
 @keyframes shake {
   10% {
     transform: translate(-1px, -2px) rotate(-1deg);
