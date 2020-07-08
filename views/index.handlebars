@@ -5,14 +5,7 @@
       <h1>Burgers!</h1>
     </div>
   </div>
-  {{!-- row with list of burgers --}}
   <div id="devoured">
-    <div class="row">
-      <div class="col-md-4">
-        <img class="img-fluid"
-          src="https://media.istockphoto.com/vectors/burger-vector-icon-isolated-flat-cartoon-sandwich-logotype-clipart-vector-id695609346">
-      </div>
-    </div>
     <div class="row">
       <div class="col-md">
         {{!-- form to add burger --}}
@@ -39,27 +32,29 @@
           </form>
         </div>
       </div>
-      <div class="row" id="burgerList">
-        <div class="col-md-4" id="dev">
-          <h2>Devoured Burgers!</h2>
-          <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            {{> burgers/burger-block notdevoured=false}}
-            {{/if}}
-            {{/each}}
-          </ul>
-        </div>
-        <div class="col-md-4" id="notDev">
-          <h2>Burgers Not Devoured!</h2>
-          <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{> burgers/burger-block notdevoured=true}}
-            {{/unless}}
-            {{/each}}
-          </ul>
-        </div>
+    </div>
+    <hr>
+    {{!-- list of burgers --}}
+    <div class="row" id="burgerList">
+      <div class="col-md" id="dev">
+        <h2>Devoured Burgers!</h2>
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block notdevoured=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-md" id="notDev">
+        <h2>Burgers Not Devoured!</h2>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block notdevoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
       </div>
     </div>
   </div>

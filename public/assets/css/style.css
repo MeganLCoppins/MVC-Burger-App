@@ -21,13 +21,15 @@ h2 {
 li {
   margin-right: 8%;
 }
+hr {
+  border: 2px solid black;
+  width: 90%;
+  border-radius: 50%;
+}
 #devoured {
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.913);
   font-size: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 2%;
+  padding: 7% 0;
   margin-bottom: 8%;
 }
 .label {
@@ -62,15 +64,15 @@ li {
 #addButton {
   padding-left: 20%;
   padding-right: 20%;
-  margin-top: 5%;
+  margin-bottom: 3%;
   background-color: rgb(247, 179, 52);
 }
 #burgerList {
-  margin: auto;
+  margin: 3% auto;
   justify-content: center;
 }
 #notDev {
-  float: right;
+  float: left;
 }
 #notDev li {
   list-style: none;
