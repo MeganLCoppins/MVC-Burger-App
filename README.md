@@ -25,8 +25,8 @@ To use the application go to the [deployed link](https://eat-da-burger5.herokuap
 
 ## Demonstration
 
-<img src="./public/assets/images/screenshot1.png" alt="app demo 1">
-<img src="./public/assets/images/screenshot2.png" alt="app demo 2">
+<img src="./public/assets/images/demo1.png" alt="app demo 1">
+<img src="./public/assets/images/demo2.png" alt="app demo 2">
 
 ## Technologies
 
